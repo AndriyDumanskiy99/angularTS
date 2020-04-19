@@ -1,0 +1,20 @@
+
+<h1>hello</h1>
+<app-user *ngFor="let u of users" [user]="u"></app-user>
+<hr>
+<app-post *ngFor="let sp of posts" [post] = "sp"> </app-post>
+<hr>
+<app-coment *ngFor="let com of comment" [coment]="com"></app-coment>
+
+
+
+<a routerLink="/">home</a>
+<br>
+<a routerLink="users">users</a>
+<br>
+<a routerLink="posts">posts</a>
+<br>
+<a routerLink="comment">comments</a>
+
+
+<router-outlet></router-outlet>
